@@ -3,13 +3,24 @@ import photo1 from '../Images/photo-1.webp';
 
 function Home() {  
   const [inputValue, setInputValue] = useState('');  
+  const [message, setMessage] = useState('');   
 
   const handleInputChange = (e) => {  
     setInputValue(e.target.value);  
   };  
 
-  const handleButtonClick = () => {  
-    alert("Your email has been successfully submitted!");  
+  const handleButtonClick = (e) => {  
+    e.preventDefault();  
+   
+    if (inputValue.trim()) {   
+      setMessage("Your email has been submitted successfully!");  
+    } else {  
+      setMessage("Please enter your email address.");   
+    }  
+     
+    setTimeout(() => {  
+      setMessage('');  
+    }, 3000);  
   };  
 
   return (  
@@ -32,10 +43,13 @@ function Home() {
               type="submit"  
               className="py-4 px-8 font-semibold bg-orange-700 rounded-[30px] text-white hover:bg-orange-600 ml-4"  
             >  
-              Get  Started  
+              Get Started  
             </button>   
           </form>   
         </div>  
+        {message && ( // Agar xabar mavjud bo'lsa, ko'rsatamiz  
+          <div className="mt-4 text-lg text-gray-800">{message}</div>  
+        )}  
       </div>  
       <div className='flex justify-center items-center w-full md:w-1/2'>  
         <img  
