@@ -9,16 +9,16 @@ const Contact = () => {
         If you have any questions or would like to schedule a consultation with one of our real estate experts, please don't hesitate to contact us.  
       </p>  
       <div className="flex flex-col md:flex-row md:space-x-10">    
-        <div className="flex-1 mb-8 px-5 ml-40">  
-          <div className="mb-6 flex">  
+        <div className="flex-1 mb-8 px-5">  
+          <div className="mb-6 flex items-center">  
             <FaMapMarkerAlt size={24} className="text-orange-600" />  
             <span className="ml-2 text-gray-700">(123) 1234 Main St, Anytown USA 12345</span>  
           </div>  
-          <div className="mb-6 flex">  
+          <div className="mb-6 flex items-center">  
             <FaPhoneAlt size={24} className="text-orange-600" />  
             <span className="ml-2 text-gray-700">(123) 456-7890</span>  
           </div>  
-          <div className="mb-6 flex">  
+          <div className="mb-6 flex items-center">  
             <FaEnvelope size={24} className="text-orange-600" />  
             <span className="ml-2 text-gray-700">info@example.com</span>  
           </div>  
@@ -83,7 +83,7 @@ const Contact = () => {
             </ul>  
           </div>  
         </div>  
-        <h1 className='text-center text-[18px]'> © 2024 Real Estate Company. All rights reserved.</h1>
+        <h1 className='text-center text-[18px]'> © 2024 Real Estate Company. All rights reserved.</h1>  
       </footer>  
     </div>  
   );  
