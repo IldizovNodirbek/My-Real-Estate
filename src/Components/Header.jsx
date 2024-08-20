@@ -13,7 +13,8 @@ function Header() {
   return (  
     <div className="container mx-auto">  
       <header className='bg-white shadow-lg py-5 flex flex-col md:flex-row md:justify-between items-center px-5'>  
-        <h1 className='text-3xl md:text-4xl font-sans text-orange-700'>My Real Estate</h1>  
+        <h1 className='text-3xl md:text-4xl font-sans text-orange-700 mb-2 md:mb-0'>My Real Estate</h1>  
+        
         <nav className={`md:flex md:items-center ${isOpen ? 'block' : 'hidden'} md:block`}>  
           <ul className='flex flex-col md:flex-row md:flex-nowrap space-y-2 md:space-y-0 md:space-x-6 text-[20px]'>  
             {['home', 'about us', 'our features', 'on sale', 'our services', 'demo', 'our clients'].map((item) => (  
@@ -30,14 +31,16 @@ function Header() {
             ))}  
           </ul>  
         </nav>  
+        
         <NavLink   
           to="/contact"   
-          className='py-[10px] px-[20px] bg-orange-700 border border-transparent rounded-lg text-lg text-white hover:bg-white transition-transform duration-500 hover:scale-125 hover:text-black hover:border-orange-700'   
+          className='py-[10px] px-[20px] bg-orange-700 border border-transparent rounded-lg text-lg text-white hover:bg-white transition-transform duration-500 hover:scale-125 hover:text-black hover:border-orange-700 mt-2 md:mt-0'   
           onClick={() => setIsOpen(false)}  
         >  
           Contact Us  
-        </NavLink> 
-        <button onClick={toggleMenu} className="md:hidden text-gray-800">  
+        </NavLink>   
+        
+        <button onClick={toggleMenu} className="md:hidden text-gray-800 mt-2 md:mt-0">  
           {isOpen ? <RiDeleteBack2Fill size={24} /> : <RxHamburgerMenu size={24} />}  
         </button>  
       </header>  
