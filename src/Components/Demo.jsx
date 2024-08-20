@@ -27,19 +27,19 @@ function Demo() {
           <h1 className="font-bold text-xl md:text-2xl text-justify">My Real Estate</h1>  
           <p className="text-2xl md:text-4xl font-bold mt-5">Why Choose Our Properties?</p>  
           <p className="text-lg mt-5 flex items-center text-left">  
-            <span className="text-black bg-white w-[50px] h-[50px] flex items-center justify-center rounded-full mr-3">  
+            <span className="text-black bg-white w-[50px] h-[50px] flex items-center justify-center rounded-full mr-3 shrink-0">  
               <IoHome />  
             </span>  
             Spacious and comfortable living spaces  
           </p>  
           <p className="text-lg mt-5 flex items-center text-left">  
-            <span className="text-black bg-white w-[50px] h-[50px] flex items-center justify-center rounded-full mr-3">  
+            <span className="text-black bg-white w-[50px] h-[50px] flex items-center justify-center rounded-full mr-3 shrink-0">  
               <ImLocation2 />  
             </span>  
             Located in prime areas with excellent infrastructure  
           </p>  
           <p className="text-lg mt-5 flex items-center text-left">  
-            <span className="text-black bg-white w-[50px] h-[50px] flex items-center justify-center rounded-full mr-3">  
+            <span className="text-black bg-white w-[50px] h-[50px] flex items-center justify-center rounded-full mr-3 shrink-0">  
               <AiFillDollarCircle />  
             </span>  
             Affordable prices and flexible payment plans  
