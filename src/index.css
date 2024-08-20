@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rounded-image {  
+    width: 550px;
+    height: 450px;
+    border-top-right-radius: 79%;   
+    border-bottom-left-radius: 79%;
+}
+
+.rounded-image-2 {
+    border-top-right-radius: 9999px; 
+}
+
