@@ -3,8 +3,8 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact = () => {  
   return (  
-    <div className="container mx-auto p-5 bg-gray-100">  
-      <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center">Contact Us</h1>  
+    <div className="container mx-auto p-5 bg-gray-200 mt-96 md:mt-0" id="contact">  
+      <h1 className="text-3xl font-bold text-gray-800 text-center mt-14">Contact Us</h1>  
       <p className="text-lg text-gray-600 mb-8 mx-auto max-w-md text-center">  
         If you have any questions or would like to schedule a consultation with one of our real estate experts, please don't hesitate to contact us.  
       </p>  
