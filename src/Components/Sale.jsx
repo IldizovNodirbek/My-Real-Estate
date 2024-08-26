@@ -3,8 +3,8 @@ import SaleProperties from "../EstateDatas/SalesDatas";
 function Sale() {   
 
   return (  
-    <div className="p-10 bg-gray-100 h-[100vh]">  
-      <h1 className="text-5xl font-bold text--900 text-justify">On Sale <span className='text-orange-900'>Properties</span></h1>  
+    <div className="p-10 bg-gray-100 h-[100vh] mt-[700px] md:mt-0" id="sale">  
+      <h1 className="text-5xl font-bold text-900 text-justify mt-10">On Sale <span className='text-orange-900'>Properties</span></h1>  
       <p className="mt-4 text-gray-600 text-justify text-[18px]">  
         We offer a wide selection of on-sale properties that cater to different preferences and budgets. Here are some of our featured properties:  
       </p>  
