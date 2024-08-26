@@ -2,8 +2,8 @@ import FeatureProperties from "../EstateDatas/FeaturesDatas";
 
 function Features() {
   return (  
-    <div className="p-10 bg-gray-200 h-[100vh]">  
-      <h1 className="text-5xl font-bold text--900 text-justify">Feature <span className='text-orange-900'>Properties</span></h1>  
+    <div className="p-10 bg-gray-200 h-[100vh]" id="features">  
+      <h1 className="text-5xl font-bold text-900 text-justify mt-10">Feature <span className='text-orange-900'>Properties</span></h1>  
       <p className="mt-4 text-gray-600 text-justify text-[18px]">Here are some of our featured properties:</p>  
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">  
         {FeatureProperties.map(property => (  
