@@ -4,8 +4,8 @@ import ServicesData from '../EstateDatas/ServicesDatas';
 function Sale() {   
 
   return (  
-    <div className="p-10 bg-gray-200 h-[100vh]">  
-      <h1 className="text-5xl font-bold text--900 text-justify">Our <span className='text-orange-900'>Services</span></h1>  
+    <div className="p-10 bg-gray-300 h-[100vh]" id="services">  
+      <h1 className="text-5xl font-bold text-900 text-justify mt-10">Our <span className='text-orange-900'>Services</span></h1>  
       <p className="mt-4 text-gray-600 text-justify text-[18px]">  
         We offer many services for our clients, Here are some of our services:  
       </p>  
