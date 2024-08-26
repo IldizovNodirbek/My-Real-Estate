@@ -6,7 +6,7 @@ import EstateVideo from "../Video/EstateVideo.mp4"
 
 function Demo() {  
   return (  
-    <div className="flex flex-col md:flex-row">  
+    <div className="flex flex-col md:flex-row mt-[960px] md:mt-0" id="demo">  
       <div className="md:w-1/2 w-full h-[50vh] md:h-[100vh] sm:h-auto bg-gray-200 flex flex-col justify-center items-center">  
         <h1 className="font-bold text-3xl md:text-4xl text-gray-900 text-center mt-16 md:mt-32 sm:mt-44">  
           Real <span className="text-orange-700">Estate</span> Video  
