@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  
+import { BrowserRouter as Router } from 'react-router-dom';  
 import Header from './Components/Header';  
 import Home from './Components/Home';  
 import About from './Components/About';  
@@ -15,17 +15,14 @@ function App() {
       <div>  
         <Header />  
         <div className="min-h-screen">  
-          <Routes>  
-            <Route path="home" element={<Home />} />  
-            <Route path="about us" element={<About />} />  
-            <Route path="our features" element={<Features />} />  
-            <Route path="on sale" element={<Sale />} />  
-            <Route path="demo" element={<Demo />} />  
-            <Route path="our services" element={<Services />} />  
-            <Route path="our clients" element={<Clients />} /> 
-            <Route path="/contact" element={<Contact />} />   
-            <Route path="/" element={<Home />} />   
-          </Routes>  
+            <div id="home"><Home /></div>  
+            <div id="about"><About/></div>  
+            <div id="features"><Features/></div>  
+            <div id="sale"><Sale /></div>  
+            <div id="demo"><Demo /></div>  
+            <div id="services"><Services/></div>  
+            <div id="clients"><Clients/></div>  
+            <div id="contact"><Contact/></div>  
         </div>  
       </div>  
     </Router>  
